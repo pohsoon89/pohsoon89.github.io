@@ -1,0 +1,96 @@
+body, html {
+	font-family: 'Montserrat', sans-serif;
+	height: 100%;
+	width: 100%;
+}
+
+.box{
+	border: 1px solid white;
+}
+
+.topbar{
+	height: 70px;
+	width: 100%;
+	background-color: #142332;
+	border-bottom: 5px solid #B78846;
+	color: #B78846;
+}
+
+.topbar p{
+	font-size: 15px;
+	line-height: 70px;
+	margin-left: 40px 
+}
+
+.navbar{
+
+	width: 100%;
+	background-color: #142332;
+	color: white;
+	text-align: center;
+}
+
+.navbar ul{
+	padding: 20px 0px;
+
+}
+
+.navbar ul li{
+	display: inline-block;
+	height: 108px;
+    width: 150px;
+    vertical-align: middle;
+}
+
+.navbar ul li a{
+	color: white;
+	text-decoration: none;
+	padding: 20px 0px;
+	transition: all 0.2s;
+	line-height: 108px;
+}
+
+.navbar ul li a:hover{
+	border-bottom: 3px solid white;
+}
+
+.main-logo{
+	width: 150px;
+	margin: 0px;
+}
+
+.jumbotron{
+	background-color: #142332;	
+	color: #B78846;
+	border: 1px solid red;
+}
+
+.big-box{
+			height: 200px;
+			width: 50%;
+			margin: 50px auto;
+			border: 2px solid white;
+			border-top: none;
+		}
+
+		.small-box{
+			width: 30%;
+
+			border-top: 2px solid white;
+			float: left;
+			box-sizing: border-box;
+		}
+
+		.small-box-2{
+			width: 40%;
+			border-top: none;
+			text-align: center;
+			padding: 5px;
+			margin-top: -30px;
+		}
+
+		.small-box-2 p{
+			font-size: 20px;
+			margin: 0px;
+			color: white;
+		}
