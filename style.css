@@ -23,7 +23,6 @@ body, html {
 }
 
 .navbar{
-
 	width: 100%;
 	background-color: #142332;
 	color: white;
@@ -154,6 +153,145 @@ p.about-text{
 	bottom: 5px;
 	right: -100px;
 }
+
+.ingredient{
+	text-align: center;
+	padding: 70px 50px;
+}
+
+p.section-title{
+	font-size: 36px;
+	font-weight: bold;
+}
+
+p.section-description {
+	font-size: 16px;
+	margin-top: 10px;
+	font-weight: 200;
+}
+
+
+
+.ingredient-box{
+	width: 100%;
+	min-height: 550px;
+	position: relative;
+}
+
+.ingredients-details{
+	width: 200px;
+	display: inline-block;
+}
+
+.food-box{
+	display: inline-block;
+	position: absolute;
+}
+
+.oats-box{
+	top: 0;
+	left: 0;
+}
+
+.oats-img{
+	width: 350px;
+	margin-left: -100px;
+}
+
+.flaxseed-box{
+	top: 0;
+	right: 0;
+}
+
+.flaxseed-img{
+	width: 150px;
+}
+
+.flaxseed{
+	vertical-align: top;
+}
+
+.almond-box{
+	bottom: 0;
+	left: 100px;
+}
+
+.almond{
+	vertical-align: top;
+	margin-top: 200px;
+}
+
+.almond-img{
+	width: 200px;
+	margin-left: -50px;
+}
+
+.whey-box{
+	top: 30%;
+	left: 45%;
+}
+
+.whey{
+	display: block;
+}
+.whey-img{
+	width: 200px;
+	margin-left: 100px;
+	margin-top:-40px;
+}
+
+.sugar-box {
+	bottom: 0;
+	right: 0;
+}
+
+.sugar-img{
+	width: 150px;
+}
+
+
+
+.ingredient-name{
+	font-size: 28px;
+}
+
+.ingredient-description{
+	font-size: 14px;
+	margin-top: 5px;
+}
+
+.title-box{
+	background-color: #142332;
+	padding: 20px;
+	display: inline-block;
+}
+
+.work{
+	background-color: #142332;
+	color: white;
+	padding: 70px 50px;
+	text-align: center;
+}
+
+.work-box{
+	border: 5px solid #B78846;
+	padding: 50px 10px;
+	margin-top: -50px;
+}
+
+.work-box .step{
+	display: inline-block;
+	vertical-align: middle;
+	width: 300px;
+	box-sizing: border-box;
+	padding: 0px 10px;
+}
+
+.work-box .step img{
+	height: 200px;
+}
+
+
 
 .clearfix:after {
      visibility: hidden;
