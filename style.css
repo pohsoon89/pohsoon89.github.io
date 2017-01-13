@@ -19,7 +19,7 @@ body, html {
 .topbar p{
 	font-size: 15px;
 	line-height: 70px;
-	margin-left: 40px 
+	margin-left: 40px
 }
 
 .navbar{
@@ -59,7 +59,7 @@ body, html {
 }
 
 .jumbotron{
-	background-color: #142332;	
+	background-color: #142332;
 	color: #B78846;
 	box-sizing: border-box;
 	padding: 120px 0px;
@@ -124,7 +124,7 @@ body, html {
 .about{
 	height: 500px;
 	width: 100%;
-	background-image: url('image/about_background.png'); 
+	background-image: url('image/about_background.png');
 	background-size: cover;
 	position: relative;
 	overflow: hidden;
@@ -285,13 +285,175 @@ p.section-description {
 	width: 300px;
 	box-sizing: border-box;
 	padding: 0px 10px;
+	margin-left: 15px;
+}
+
+.step:first-child{
+	margin-left: 0px;
+}
+
+.step1 img{
+	margin-left: 30px;
+}
+
+.step2 img{
+	margin-left: 40px;
 }
 
 .work-box .step img{
 	height: 200px;
 }
 
+.work-box .step3 img{
+	height: 120px;
+}
 
+.step-title{
+	font-size: 24px;
+	margin-top: 10px;
+}
+
+.step-description{
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+.work-box .step3 {
+	padding-top: 40px;
+}
+
+.work-box .step3 .step-title{
+	margin-top: 30px;
+}
+
+.nutrition-box{
+	width: 330px;
+	padding: 20px;
+	color: #B78846;
+	border: 7px solid #B78846;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.nutrition-header{
+	border-bottom: 7px solid #B78846;
+	padding-bottom: 10px;
+}
+
+.nutrition-title{
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.nutrition-description{
+	font-size: 18px;
+}
+
+.nutrition-description-bold{
+	font-weight: bold;
+	margin-bottom: 5px
+}
+
+.nutrition-fact{
+	padding: 5px 0px;
+}
+
+.nutrition-subtitle{
+	padding: 10px 0px;
+	border-bottom: 3px solid #B78846;
+}
+
+.nutrition-fact-subtitle{
+	text-align: right;
+	padding: 0px 0px;
+	font-size: 14px;
+}
+
+.nutrition-fact p{
+	display: inline;
+	font-size: 14px;
+}
+
+p.nutrition-type{
+	font-weight: bold;
+}
+
+p.nutrition-value{
+	float: right;
+}
+
+.nutrition-body{
+	padding-bottom: 10px;
+	border-bottom: 5px solid #B78846;
+}
+
+.nutrition-footer{
+	padding-top: 10px;
+}
+
+.nutrition-alert{
+	font-size: 14px;
+	margin-bottom: 8px;
+}
+
+.nutrition-subtype{
+	margin-left: 20px;
+	font-weight: 200 !important;
+}
+
+.shaker{
+	display: inline-block;
+	width: 400px;
+	position: relative;
+}
+
+.shaker-image{
+	height: 420px;
+	margin: 0px;
+	margin-right: 90px;
+
+}
+
+.macro{
+	padding: 50px;
+	margin: px auto;
+	text-align: center;
+}
+
+.macro-box{
+	margin-top: 50px
+}
+
+.macro-percentage{
+	position: absolute;
+	text-align: center;
+	color: #B78846;
+}
+
+.percent-50{
+	position: absolute;
+	bottom: 200px;
+	right: 40px;
+}
+
+.percent-30{
+	bottom: 105px;
+	right: 40px;
+}
+
+.percent-20{
+	bottom: 33px;
+	right: 40px;
+}
+
+.macro-percentage-value{
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.macro-food-name{
+	font-size: 18px;
+}
 
 .clearfix:after {
      visibility: hidden;
