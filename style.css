@@ -77,19 +77,18 @@ body, html {
 	float: left;
 	width: 30%;
 	text-align: center;
-	/*border: 1px solid white;*/
 	margin-top: -110px;
 	margin-left: 10%
 
 }
 
 .text-box{
+	box-sizing: border-box;
 	max-width: 400px;
 	padding: 15px;
 	text-align: center;
 	background-color: #142332;
 	float: left;
-	/*border: 1px solid white;*/
 	margin-top: -70px;
 	margin-left: 12%;
 }
@@ -107,7 +106,6 @@ body, html {
 }
 
 .btn-gold{
-	width: 350px;
 	height: 50px;
 	background-color: #B78846;
 	color: white;
@@ -115,6 +113,7 @@ body, html {
 	line-height: 50px;
 	margin: 30px auto;
 	font-weight: lighter;
+	text-align: center;
 }
 
 .btn-gold:first-child{
@@ -333,6 +332,7 @@ p.section-description {
 	border: 7px solid #B78846;
 	display: inline-block;
 	vertical-align: top;
+	text-align: left;
 }
 
 .nutrition-header{
@@ -416,7 +416,7 @@ p.nutrition-value{
 
 .macro{
 	padding: 50px;
-	margin: px auto;
+	margin: 0px auto;
 	text-align: center;
 }
 
@@ -455,6 +455,92 @@ p.nutrition-value{
 	font-size: 18px;
 }
 
+.purchase{
+	width: 80%;
+	padding: 20px;
+	background: #FFFFFF;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	border-radius: 5px;
+	margin: 0px auto;
+	text-align: center;
+	z-index: 10000000px;
+	position: relative;
+
+}
+
+.trial, .sell_pack{
+	width: 100%;
+}
+
+.trial {
+	margin-top: 50px;
+}
+
+.sell_pack{
+	margin-top: 30px;
+}
+
+.sell_pack .purchase-img{
+}
+
+.purchase-img{
+	min-width: 400px;
+	width: 50%;
+	float: left;
+}
+
+.purchase-detail{
+	float: left;
+	width: 45%;
+	text-align: left;
+	box-sizing: border-box;
+	padding: 10px;
+	padding-left: 20px;
+}
+
+.purchase-title{
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.purchase-description{
+	font-size: 14px;
+	line-height: 16px;
+
+}
+
+.product-detail{
+	font-style: italic;
+	font-size: 12px;
+	color: rgba(20,35,50,0.56);
+}
+
+.btn-purchase{
+	margin: 0px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	width: 80%;
+	height: 40px;
+	line-height: 40px;
+}
+
+.footer{
+	width: 100%;
+	height: 500px;
+	background-color: #142332;
+	margin-top: -300px;
+	padding-top: 340px;
+	text-align: center;
+	box-sizing: border-box;
+	color: #B78846;
+}
+
+.footer p{
+	margin-top: 10px;
+	font-size: 14px;
+}
+
 .clearfix:after {
      visibility: hidden;
      display: block;
@@ -462,9 +548,304 @@ p.nutrition-value{
      content: " ";
      clear: both;
      height: 0;
-     }
+}
 .clearfix { display: inline-block; }
 /* start commented backslash hack \*/
 * html .clearfix { height: 1%; }
 .clearfix { display: block; }
 /* close commented backslash hack */
+
+
+@media screen and (max-width: 1010px){
+	.jumbo-img{
+		float: left;
+		width: 30%;
+		text-align: center;
+		margin-top: -110px;
+		margin-left: 5%;
+
+	}
+
+	.text-box{
+		box-sizing: border-box;
+		max-width: 400px;
+		padding: 15px;
+		text-align: center;
+		background-color: #142332;
+		float: left;
+		margin-top: -100px;
+		margin-left: 5%;
+	}
+
+	.about-img{
+		height: 350px;
+	}
+
+	.whey-box{
+		top: 50%;
+		left: 70%;
+	}
+
+	.whey{
+		display: block;
+	}
+	.whey-img{
+		width: 200px;
+		margin-left: -300px;
+		margin-top: -200px;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.navbar{
+		width: 100%;
+		background-color: #142332;
+		color: white;
+		text-align: center;
+	}
+
+	.navbar ul li{
+		display: inline-block;
+		height: 108px;
+	    width: 100px;
+	    border: 1px solid white;
+	}
+
+	.navbar ul li#icon-list{
+		width: 150px !important;
+	}
+
+	.navbar ul li a{
+		padding: 5px 0px;
+	}
+
+	.jumbo-img{
+		display: none;
+	}
+
+	.text-box{
+		box-sizing: border-box;
+		max-width: none;
+		width: 90%;
+		padding: 15px;
+		text-align: center;
+		background-color: #142332;
+		margin-top: -50px;
+		margin-left: 5%;
+	}
+
+	.text-box p {
+		font-size: 36px;
+		color: #B78846;
+		/*border: 1px solid white;*/
+	}
+
+	.about-box{
+		text-align: center;
+		width: 90%;
+		padding-top: 120px;
+		padding-left: 0px;
+		margin: 0 auto;
+		z-index: 1000;
+		position: relative;
+	}
+
+	.about{
+		height: 400px;
+	}
+
+	.about-img{
+		height: 200px;
+		position: absolute;
+		bottom: 5px;
+		right: -40px;
+	}
+
+	.food-box{
+		position: relative;
+		margin-top: 30px;
+		margin-left: 20px;
+		box-sizing: border-box;
+		padding:10px;
+		min-width: 250px;
+		border-radius: 5px;
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	}
+
+
+	.ingredient-box{
+		width: 100%;
+		min-height: auto;
+		position: relative;
+
+	}
+
+	.ingredients-details{
+		width: 200px;
+		display: block;
+		margin: 0 auto;
+	}
+
+
+	.oats-box{
+		text-align: center;
+	}
+
+	.oats-img{
+		height: 200px;
+		width: auto;
+		margin-left: 0px;
+	}
+
+	.flaxseed-box{
+	}
+
+	.flaxseed-img{
+		height: 200px;
+		width: auto;
+	}
+
+	.flaxseed{
+		vertical-align: middle;
+	}
+
+	.almond-box{
+		bottom: 0;
+		left: 0px;
+	}
+
+	.almond{
+		margin-top: 0px;
+	}
+
+	.almond-img{
+		height: 200px;
+		width: auto;
+		margin-left: 0px;
+	}
+
+	.whey-box{
+		top: 0%;
+		left: 0%;
+	}
+
+	.whey{
+		display: block;
+	}
+	.whey-img{
+		height: 200px;
+		width: auto;
+		margin-left: 0px;
+		margin-top:0px;
+	}
+
+	.sugar-box {
+		bottom: 0;
+		right: 0;
+	}
+
+	.sugar-img{
+		height: 200px;
+		width: auto;
+	}
+
+	.nutrition-box{
+		margin-top: 50px;
+	}
+
+	.purchase-img{
+		min-width: auto;
+	}
+
+	.purchase{
+		width: 85%;
+	}
+
+	.purchase-img{
+		min-width: auto;
+		width: 50%;
+		float: left;
+	}
+
+}
+
+@media screen and (max-width: 658px){
+	.purchase-img{
+		min-width: auto;
+		width: 100%;
+	}
+
+
+	.purchase-img{
+		min-width: auto;
+		width: 100%;
+		float: left;
+	}
+
+	.purchase-detail{
+		width: 100%;
+	}
+
+	.nutrition-box{
+		width: 250px;
+	}
+
+	.macro{
+		padding: 0px;
+		margin: 0px auto;
+		text-align: center;
+	}
+
+	.shaker{
+		width: 250px;
+		padding: 20px;
+	}
+
+	.shaker-image{
+		height: 300px;
+		margin-right: 50px;
+	}
+
+	.percent-50{
+		position: absolute;
+		bottom: 160px;
+		right: 0px;
+	}
+
+	.percent-30{
+		bottom: 95px;
+		right: 0px;
+	}
+
+	.percent-20{
+		bottom: 40px;
+		right: 0px;
+	}
+
+	.macro-percentage-value{
+		font-size: 24px;
+		font-weight: bold;
+	}
+
+	.macro-food-name{
+		font-size: 14px;
+	}
+
+	.about-img{
+		display: none;
+	}
+
+	.about{
+		padding-bottom: 40px;
+	}
+
+	#icon-list{
+		display: none !important;
+	}
+
+	.work-box .step{
+		margin: 15px 0px;
+	}
+
+
+}
