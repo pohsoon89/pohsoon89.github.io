@@ -4,6 +4,10 @@ body, html {
 	width: 100%;
 }
 
+.mobile-navbar{
+	display: none !important;
+}
+
 .box{
 	border: 1px solid white;
 }
@@ -64,7 +68,6 @@ body, html {
 	box-sizing: border-box;
 	padding: 120px 0px;
 	padding-bottom: 20px;
-	/*border: 1px solid white;*/
 }
 
 .jumbo-frame{
@@ -608,7 +611,6 @@ p.nutrition-value{
 		display: inline-block;
 		height: 108px;
 	    width: 100px;
-	    border: 1px solid white;
 	}
 
 	.navbar ul li#icon-list{
@@ -822,6 +824,7 @@ p.nutrition-value{
 		right: 0px;
 	}
 
+
 	.macro-percentage-value{
 		font-size: 24px;
 		font-weight: bold;
@@ -836,16 +839,52 @@ p.nutrition-value{
 	}
 
 	.about{
-		padding-bottom: 40px;
+		padding-bottom: 100px;
 	}
 
-	#icon-list{
+	.desktop-navbar{
 		display: none !important;
 	}
 
+	.mobile-navbar{
+		display: block !important;
+	}
+
+	.work{
+		padding: 70px 0px;
+
+	}
+
+	.work-box{
+		width: 85%;
+		margin: -50px auto;
+	}
+
 	.work-box .step{
+		width: 250px;
 		margin: 15px 0px;
 	}
 
+	.topbar p{
+		font-size: 12px;
+	}
+
+	.btn-gold{
+		font-size: 12px;
+	}
+
+	.ingredient, .macro{
+		padding: 70px 0px;
+	}
+
+	.ingredient-box{
+		margin-top: 40px;
+	}
+
+	.food-box{
+		margin: 20px auto;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
 
 }
