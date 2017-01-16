@@ -23,9 +23,9 @@ body, html {
 .topbar{
 	height: 70px;
 	width: 100%;
-	background-color: #142332;
-	border-bottom: 5px solid #B78846;
-	color: #B78846;
+	background-color: #010916;
+	border-bottom: 5px solid #cb9b57;
+	color: #cb9b57;
 }
 
 .topbar p{
@@ -36,7 +36,7 @@ body, html {
 
 .navbar{
 	width: 100%;
-	background-color: #142332;
+	background-color: #010916;
 	color: white;
 	text-align: center;
 }
@@ -71,15 +71,15 @@ body, html {
 }
 
 .jumbotron{
-	background-color: #142332;
-	color: #B78846;
+	background-color: #010916;
+	color: #cb9b57;
 	box-sizing: border-box;
 	padding: 120px 0px;
 	padding-bottom: 20px;
 }
 
 .jumbo-frame{
-	border: 5px solid #B78846;
+	border: 5px solid #cb9b57;
 	width: 90%;
 	margin: 0px auto;
 }
@@ -98,7 +98,7 @@ body, html {
 	max-width: 400px;
 	padding: 15px;
 	text-align: center;
-	background-color: #142332;
+	background-color: #010916;
 	float: left;
 	margin-top: -70px;
 	margin-left: 12%;
@@ -106,19 +106,19 @@ body, html {
 
 .text-box p {
 	font-size: 36px;
-	color: #B78846;
+	color: #cb9b57;
 	/*border: 1px solid white;*/
 }
 
 .jumbo-main-image{
 	width: 100%;
 	/*border: 1px solid white;*/
-	background-color: #142332;
+	background-color: #010916;
 }
 
 .btn-gold{
 	height: 50px;
-	background-color: #B78846;
+	background-color: #cb9b57;
 	color: white;
 	font-size: 16px;
 	line-height: 50px;
@@ -198,6 +198,10 @@ p.section-description {
 	position: absolute;
 }
 
+.food-img1{
+	display: none;
+}
+
 .oats-box{
 	top: 0;
 	left: 0;
@@ -271,20 +275,20 @@ p.section-description {
 }
 
 .title-box{
-	background-color: #142332;
+	background-color: #010916;
 	padding: 20px;
 	display: inline-block;
 }
 
 .work{
-	background-color: #142332;
+	background-color: #010916;
 	color: white;
 	padding: 70px 50px;
 	text-align: center;
 }
 
 .work-box{
-	border: 5px solid #B78846;
+	border: 5px solid #cb9b57;
 	padding: 50px 10px;
 	margin-top: -50px;
 }
@@ -339,15 +343,15 @@ p.section-description {
 .nutrition-box{
 	width: 330px;
 	padding: 20px;
-	color: #B78846;
-	border: 7px solid #B78846;
+	color: #cb9b57;
+	border: 7px solid #cb9b57;
 	display: inline-block;
 	vertical-align: top;
 	text-align: left;
 }
 
 .nutrition-header{
-	border-bottom: 7px solid #B78846;
+	border-bottom: 7px solid #cb9b57;
 	padding-bottom: 10px;
 }
 
@@ -371,7 +375,7 @@ p.section-description {
 
 .nutrition-subtitle{
 	padding: 10px 0px;
-	border-bottom: 3px solid #B78846;
+	border-bottom: 3px solid #cb9b57;
 }
 
 .nutrition-fact-subtitle{
@@ -395,7 +399,7 @@ p.nutrition-value{
 
 .nutrition-body{
 	padding-bottom: 10px;
-	border-bottom: 5px solid #B78846;
+	border-bottom: 5px solid #cb9b57;
 }
 
 .nutrition-footer{
@@ -438,7 +442,7 @@ p.nutrition-value{
 .macro-percentage{
 	position: absolute;
 	text-align: center;
-	color: #B78846;
+	color: #cb9b57;
 }
 
 .percent-50{
@@ -470,7 +474,7 @@ p.nutrition-value{
 	width: 80%;
 	padding: 20px;
 	background: #FFFFFF;
-	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	box-shadow: 0 -3px 6px rgba(0,0,0,0.16), 0 -3px 6px rgba(0,0,0,0.23);
 	border-radius: 5px;
 	margin: 0px auto;
 	text-align: center;
@@ -539,12 +543,12 @@ p.nutrition-value{
 .footer{
 	width: 100%;
 	height: 500px;
-	background-color: #142332;
+	background-color: #010916;
 	margin-top: -300px;
 	padding-top: 340px;
 	text-align: center;
 	box-sizing: border-box;
-	color: #B78846;
+	color: #cb9b57;
 }
 
 .footer p{
@@ -582,7 +586,7 @@ p.nutrition-value{
 		max-width: 400px;
 		padding: 15px;
 		text-align: center;
-		background-color: #142332;
+		background-color: #010916;
 		float: left;
 		margin-top: -100px;
 		margin-left: 5%;
@@ -610,7 +614,7 @@ p.nutrition-value{
 @media screen and (max-width: 900px){
 	.navbar{
 		width: 100%;
-		background-color: #142332;
+		background-color: #010916;
 		color: white;
 		text-align: center;
 	}
@@ -639,14 +643,14 @@ p.nutrition-value{
 		width: 90%;
 		padding: 15px;
 		text-align: center;
-		background-color: #142332;
+		background-color: #010916;
 		margin-top: -50px;
 		margin-left: 5%;
 	}
 
 	.text-box p {
 		font-size: 36px;
-		color: #B78846;
+		color: #cb9b57;
 		/*border: 1px solid white;*/
 	}
 
@@ -679,8 +683,17 @@ p.nutrition-value{
 		padding:10px;
 		min-width: 250px;
 		border-radius: 5px;
-		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 	}
+
+	.food-img1{
+		display: inline-block;
+	}
+
+	.food-img2{
+		display: none;
+
+	}
+
 
 
 	.ingredient-box{
