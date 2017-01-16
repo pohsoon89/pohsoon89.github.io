@@ -12,14 +12,6 @@ body, html {
 	border: 1px solid white;
 }
 
-.navbar-fixed{
-	position: fixed;
-	top: 0;
-	z-index: 99999999;
-
-
-}
-
 .topbar{
 	height: 70px;
 	width: 100%;
@@ -65,9 +57,29 @@ body, html {
 	border-bottom: 3px solid white;
 }
 
+.navbar-fixed{
+	position: fixed;
+	top: 0;
+	z-index: 99999999;
+	transition: all 2s;
+}
+
+.navbar-fixed .main-logo{
+	width: 100px;
+}
+
+.navbar-fixed ul li{
+	height: 70px;
+}
+
+.navbar ul li a{
+	line-height: 70px;
+}
+
 .main-logo{
 	width: 150px;
 	margin: 0px;
+	transition: all 0.5s;
 }
 
 .jumbotron{
@@ -691,10 +703,7 @@ p.nutrition-value{
 
 	.food-img2{
 		display: none;
-
 	}
-
-
 
 	.ingredient-box{
 		width: 100%;

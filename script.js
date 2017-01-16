@@ -32,11 +32,14 @@ $(document).ready(function() {
 
     if ($(window).scrollTop() > 76) {
       $('.desktop-navbar').addClass('navbar-fixed');
+      $('.jumbotron').css("margin-top", "70px");
+
     }
 
 
     if ($(window).scrollTop() < 75) {
       $('.desktop-navbar').removeClass('navbar-fixed');
+      $('.jumbotron').css("margin-top", "0px");
     }
   });
 });
