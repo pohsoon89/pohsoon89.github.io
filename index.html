@@ -7,6 +7,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
 	<div class="topbar">
@@ -23,13 +24,13 @@
 	</div>
 	<div class="navbar desktop-navbar">
 		<ul>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Ingredient</a></li>
+			<li><a class="about-btn" href="#about">About</a></li>
+			<li><a class="ingredient-btn" href="#ingredient">Ingredient</a></li>
 			<li id="icon-list">
 				<img src="image/topblock_logo.png" alt="" class="main-logo">
 			</li>
-			<li><a href="#">How it work</a></li>
-			<li><a href="#">Macros</a></li>
+			<li><a class="work-btn" href="#work">How it work</a></li>
+			<li><a class="macro-btn" href="#macro">Macros</a></li>
 		</ul>
 	</div>
 	<div class="jumbotron">
@@ -206,7 +207,7 @@
 	</section>
 	<section id="purchase">
 		<div class="purchase">
-			<p class="section-title">Macros</p>
+			<p class="section-title">Purchase</p>
 			<p class="section-description">The Finest of the Meal</p>
 			<div class="trial">
 				<img src="image/purchase_trialpic3.png" alt="" class="purchase-img">
@@ -250,6 +251,7 @@
 		</div>
 	</section>
 
+	<script src="script.js"></script>
 
 </body>
 </html>
