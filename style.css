@@ -13,16 +13,16 @@ body, html {
 }
 
 .topbar{
-	height: 70px;
+	height: 50px;
 	width: 100%;
 	background-color: #010916;
-	border-bottom: 5px solid #cb9b57;
+	border-bottom: 2px solid #cb9b57;
 	color: #cb9b57;
 }
 
 .topbar p{
-	font-size: 15px;
-	line-height: 70px;
+	font-size: 12px;
+	line-height: 50px;
 	margin-left: 40px
 }
 
@@ -74,6 +74,7 @@ body, html {
 
 .navbar ul li a{
 	line-height: 70px;
+	text-transform: uppercase;
 }
 
 .main-logo{
@@ -137,6 +138,7 @@ body, html {
 	margin: 30px auto;
 	font-weight: lighter;
 	text-align: center;
+	border-radius: 25px;
 }
 
 .btn-gold:first-child{
@@ -155,6 +157,7 @@ body, html {
 .about-box{
 	text-align: center;
 	width: 60%;
+	max-width: 800px;
 	padding-top: 120px;
 	padding-left: 80px;
 }
@@ -196,8 +199,10 @@ p.section-description {
 
 .ingredient-box{
 	width: 100%;
+	max-width: 1000px;
 	min-height: 550px;
 	position: relative;
+	margin: 20px auto;
 }
 
 .ingredients-details{
@@ -484,7 +489,8 @@ p.nutrition-value{
 
 .purchase{
 	width: 80%;
-	padding: 20px;
+	max-width: 1000px;
+	padding: 50px;
 	background: #FFFFFF;
 	box-shadow: 0 -3px 6px rgba(0,0,0,0.16), 0 -3px 6px rgba(0,0,0,0.23);
 	border-radius: 5px;
@@ -548,8 +554,8 @@ p.nutrition-value{
 	margin-top: 30px;
 	margin-bottom: 10px;
 	width: 80%;
-	height: 40px;
-	line-height: 40px;
+	height: 50px;
+	line-height: 50px;
 }
 
 .footer{
@@ -681,10 +687,7 @@ p.nutrition-value{
 	}
 
 	.about-img{
-		height: 200px;
-		position: absolute;
-		bottom: 5px;
-		right: -40px;
+		display: none;
 	}
 
 	.food-box{
@@ -791,6 +794,7 @@ p.nutrition-value{
 
 	.purchase{
 		width: 85%;
+		padding: 20px;
 	}
 
 	.purchase-img{
@@ -915,6 +919,14 @@ p.nutrition-value{
 		margin: 20px auto;
 		padding-top: 15px;
 		padding-bottom: 15px;
+	}
+
+	.btn-purchase{
+		width: 100%;
+	}
+
+	.product-detail{
+		text-align: center;
 	}
 
 }

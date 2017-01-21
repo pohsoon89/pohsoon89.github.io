@@ -28,18 +28,21 @@ $(document).ready(function() {
       //if you hard code, then use console
       //.log to determine when you want the
       //nav bar to stick.
-      console.log($(window).scrollTop())
+      //console.log($(window).scrollTop());
+      //console.log($(window).width());
+      var windowsize = $(window).width();
+      if (windowsize > 658) {
+        if ($(window).scrollTop() > 76) {
+          $('.desktop-navbar').addClass('navbar-fixed');
+          $('.jumbotron').css("margin-top", "70px");
 
-    if ($(window).scrollTop() > 76) {
-      $('.desktop-navbar').addClass('navbar-fixed');
-      $('.jumbotron').css("margin-top", "70px");
-
-    }
+        }
 
 
-    if ($(window).scrollTop() < 75) {
-      $('.desktop-navbar').removeClass('navbar-fixed');
-      $('.jumbotron').css("margin-top", "0px");
-    }
+        if ($(window).scrollTop() < 75) {
+          $('.desktop-navbar').removeClass('navbar-fixed');
+          $('.jumbotron').css("margin-top", "0px");
+        }
+      }
   });
 });
