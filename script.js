@@ -3,25 +3,25 @@ $(document).ready(function() {
   $(".work-btn").click(function() {
     $('html, body').animate({
         scrollTop: $("#work").offset().top - 120
-    }, 2000);
+    }, 1000);
   });
 
   $(".about-btn").click(function() {
     $('html, body').animate({
         scrollTop: $("#about").offset().top - 150
-    }, 2000);
+    }, 1000);
   });
 
   $(".ingredient-btn").click(function() {
     $('html, body').animate({
         scrollTop: $("#ingredient").offset().top - 150
-    }, 2000);
+    }, 1000);
   });
 
   $(".macro-btn").click(function() {
     $('html, body').animate({
         scrollTop: ($("#macro").offset().top )- 150
-    }, 2000);
+    }, 1000);
   });
 
   $(window).scroll(function () {
@@ -42,6 +42,7 @@ $(document).ready(function() {
         if ($(window).scrollTop() < 75) {
           $('.desktop-navbar').removeClass('navbar-fixed');
           $('.jumbotron').css("margin-top", "0px");
+
         }
       }
   });
