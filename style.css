@@ -584,6 +584,11 @@ p.nutrition-value{
 	width: 100%;
 }
 
+.btn-purchase:hover{
+	border: 2px solid #b8863f;
+	background-color: #b8863f;
+}
+
 .footer{
 	width: 100%;
 	height: 500px;
