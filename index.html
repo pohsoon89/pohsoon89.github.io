@@ -10,6 +10,47 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
+	<div class="popup-background">
+		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="signup-popup">
+					<div class="mailchimp">
+						<div id="mc_embed_signup">
+							<form action="//github.us14.list-manage.com/subscribe/post?u=3e394ca01b95d97f157c72e12&amp;id=7a595cd258" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						    	<div id="mc_embed_signup_scroll">
+									<p class="pop-up-title">Get your trial pack</p>
+									<div class="indicates-required">
+										By filling up this form, we will reach you shortly. Don't worry we won't spam you
+									</div>
+									<div class="mc-field-group">
+										<input type="email" value="" name="EMAIL" class="required email mailchimp-input" id="mce-EMAIL" placeholder="Email">
+									</div>
+									<div class="mc-field-group">
+										<input type="text" value="" name="NAME" class="required mailchimp-input" id="mce-NAME" placeholder="Name">
+									</div>
+									<div class="mc-field-group size1of2">
+										<input type="text" name="MMERGE3" class="mailchimp-input" value="" id="mce-MMERGE3" placeholder="Whatsapp No. (Optional)">
+									</div>
+									<div id="mce-responses" class="clear">
+										<div class="response" id="mce-error-response" style="display:none"></div>
+										<div class="response" id="mce-success-response" style="display:none"></div>
+									</div>
+						    		<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3e394ca01b95d97f157c72e12_7a595cd258" tabindex="-1" value=""></div>
+						    		<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="subscribe-button">
+						    		<p class="cancel">Cancel</p>
+						    	</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="thank-you">
+					<h1>Fuck You</h1>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
 	<div class="topbar">
 		<p>
 			Macrolixir &bull; The Savior for the meal skipper
@@ -222,7 +263,7 @@
 						You might first time heard about Macrolixir, no worry.
 						Get yourself a trial pack and come back for more if you like it.
 					</p>
-					<div class="btn-gold btn-purchase">Connect to get a trial pack</div>
+					<div class="btn-gold btn-purchase" id="trial-btn">Connect to get a trial pack</div>
 					<p class="product-detail">* Consists of 2 packs of Macrolixir [400kcal]</p>
 				</div>
 				<div class="clearfix"></div>
@@ -251,8 +292,8 @@
 
 		</div>
 	</section>
-
 	<script src="script.js"></script>
+
 
 </body>
 </html>

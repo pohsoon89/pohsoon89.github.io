@@ -24,6 +24,16 @@ $(document).ready(function() {
     }, 1000);
   });
 
+  $("#trial-btn").click(function() {
+    // $(".popup-background").css("display", "block");
+    $(".popup-background").show();
+  });
+
+  $(".cancel").click(function() {
+    $(".popup-background").css("display", "block");
+    $(".popup-background").hide();
+  });
+
   $(window).scroll(function () {
       //if you hard code, then use console
       //.log to determine when you want the
