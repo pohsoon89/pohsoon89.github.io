@@ -38,6 +38,13 @@ $(document).ready(function() {
     $('.flipper').css("transform", "rotateY(180deg)");
   });
 
+  $(".close-btn").click(function() {
+    $('.flipper').css("transform", "rotateY(0deg)");
+    $(".popup-background").css("display", "block");
+    $(".popup-background").hide();
+
+  });
+
   $(window).scroll(function () {
       //if you hard code, then use console
       //.log to determine when you want the
