@@ -34,6 +34,10 @@ $(document).ready(function() {
     $(".popup-background").hide();
   });
 
+  $(".subscribe-button").click(function() {
+    $('.flipper').css("transform", "rotateY(180deg)");
+  });
+
   $(window).scroll(function () {
       //if you hard code, then use console
       //.log to determine when you want the
