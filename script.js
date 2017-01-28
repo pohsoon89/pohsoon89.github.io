@@ -1,5 +1,35 @@
 $(document).ready(function() {
 
+  var data = $.ajax({
+         url: "https://us14.api.mailchimp.com/3.0/lists/7a595cd258",
+         type: "GET",
+         beforeSend: function(xhr){xhr.setRequestHeader('Authorization', 'apikey 29038bc005974c5b9e439ee5023466a0-us14');},
+         success: function() { alert('Success!' + authHeader); }
+      });
+
+  console.log(data)
+  // var data =  $.getJSON('https://us14.api.mailchimp.com/3.0/lists/7a595cd258', {
+  //   headers: {'Authorization', 'apikey 29038bc005974c5b9e439ee5023466a0-us14'}
+  // });
+
+
+  // var request = new XMLHttpRequest();
+  // request.open('GET', "https://us14.api.mailchimp.com/3.0/lists/7a595cd258", true);
+  // request.setRequestHeader("Authorization", "apikey 29038bc005974c5b9e439ee5023466a0-us14");
+
+  // // this function gets called when the request changes
+
+  //   // mistake pops up here !
+
+  //     http.onreadystatechange = function() {
+  //     // request was successful
+  //     if(http.readyState == 4 && http.status == 200) {
+  //         console.log(http.responseText);
+  //     }
+
+  // }
+
+
   $(".work-btn").click(function() {
     $('html, body').animate({
         scrollTop: $("#work").offset().top - 120
@@ -24,9 +54,32 @@ $(document).ready(function() {
     }, 1000);
   });
 
+  $(".macro-btn").click(function() {
+    $('html, body').animate({
+        scrollTop: ($("#macro").offset().top )- 150
+    }, 1000);
+  });
+
+  $("#trial-pack").click(function() {
+    $('html, body').animate({
+        scrollTop: ($(".trial").offset().top ) - 300
+    }, 1000);
+  });
+
+  $("#standard-pack").click(function() {
+    $('html, body').animate({
+        scrollTop: ($(".sell_pack").offset().top ) - 300
+    }, 1000);
+  });
+
   $("#trial-btn").click(function() {
     // $(".popup-background").css("display", "block");
-    $(".popup-background").show();
+    $(".trial-popup").show();
+  });
+
+  $("#standard-btn").click(function() {
+    // $(".popup-background").css("display", "block");
+    $(".standard-pack").show();
   });
 
   $(".cancel").click(function() {
@@ -67,4 +120,6 @@ $(document).ready(function() {
         }
       }
   });
+
+
 });
