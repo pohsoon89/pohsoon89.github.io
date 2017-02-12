@@ -1,33 +1,45 @@
 $(document).ready(function() {
 
-  var data = $.ajax({
-         url: "https://us14.api.mailchimp.com/3.0/lists/7a595cd258",
-         type: "GET",
-         beforeSend: function(xhr){xhr.setRequestHeader('Authorization', 'apikey 29038bc005974c5b9e439ee5023466a0-us14');},
-         success: function() { alert('Success!' + authHeader); }
-      });
-
-  console.log(data)
   // var data =  $.getJSON('https://us14.api.mailchimp.com/3.0/lists/7a595cd258', {
-  //   headers: {'Authorization', 'apikey 29038bc005974c5b9e439ee5023466a0-us14'}
+  //   headers: {'Authorization': 'apikey 29038bc005974c5b9e439ee5023466a0-us14'},
   // });
 
+  // console.log(data);
 
-  // var request = new XMLHttpRequest();
-  // request.open('GET', "https://us14.api.mailchimp.com/3.0/lists/7a595cd258", true);
-  // request.setRequestHeader("Authorization", "apikey 29038bc005974c5b9e439ee5023466a0-us14");
+  // var xhr = new XMLHttpRequest();
+  // xhr.open("GET", "https://www.codecademy.com/", false);
+  // xhr.send();
 
-  // // this function gets called when the request changes
+  // console.log(xhr.status);
+  // console.log(xhr.statusText);
 
-  //   // mistake pops up here !
+  function register($form) {
+    $.ajax({
+        type: $form.attr('method'),
+        url: $form.attr('action'),
+        data: $form.serialize(),
+        cache       : false,
+        dataType    : 'json',
+        contentType: "application/json; charset=utf-8",
+        error       : function(err) { alert("Could not connect to the registration server. Please try again later."); },
+        success     : function(data) {
+            if (data.result != "success") {
+                // Something went wrong, do something to notify the user. maybe
+                alert(data.msg);
+            } else {
+                // It worked, carry on...
+                alert("success");
+            }
+        }
+    });
+  }
 
-  //     http.onreadystatechange = function() {
-  //     // request was successful
-  //     if(http.readyState == 4 && http.status == 200) {
-  //         console.log(http.responseText);
-  //     }
+  var $form = $('.validate');
 
-  // }
+  $('form input[type="submit"]').bind('click', function ( event ) {
+      if ( event ) event.preventDefault();
+      register($form);
+  });
 
 
   $(".work-btn").click(function() {
@@ -95,7 +107,6 @@ $(document).ready(function() {
     $('.flipper').css("transform", "rotateY(0deg)");
     $(".popup-background").css("display", "block");
     $(".popup-background").hide();
-
   });
 
   $(window).scroll(function () {
