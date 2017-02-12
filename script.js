@@ -40,19 +40,27 @@ $(document).ready(function() {
       'mce-MMERGE3' : $('trial-pack-validate #mce-MMERGE3').val()
       };
 
+      console.log(formData);
+
       $.ajax({
         type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
-        url         : '//github.us14.list-manage.com/subscribe/post?u=3e394ca01b95d97f157c72e12&amp;id=7a595cd258', // the url where we want to POST
+        url         : 'https://github.us14.list-manage.com/subscribe/post?u=3e394ca01b95d97f157c72e12&amp;id=7a595cd258', // the url where we want to POST
         data        : formData, // our data object
         dataType    : 'json', // what type of data do we expect back from the server
-        encode          : true
-        }).done(function(data) {
-        console.log(data);
-        $(".subscribe-button").click(function() {
-          $('.flipper').css("transform", "rotateY(180deg)");
-        });
+        encode          : true,
+        error       : function(err) {
+          alert("Could not connect to the registration server. Please try again later.");
+        },
+        success     : function(data) {
+            if (data.result != "success") {
+                // Something went wrong, do something to notify the user. maybe
+                alert(data.msg);
+            } else {
+                // It worked, carry on...
+                alert("success");
+            }
+        }
       });
-
       event.preventDefault();
     });
   });
