@@ -4,21 +4,11 @@ $(document).ready(function() {
   //   headers: {'Authorization': 'apikey 29038bc005974c5b9e439ee5023466a0-us14'},
   // });
 
-  // console.log(data);
-
-  // var xhr = new XMLHttpRequest();
-  // xhr.open("GET", "https://www.codecademy.com/", false);
-  // xhr.send();
-
-  // console.log(xhr.status);
-  // console.log(xhr.statusText);
-
   function register($form) {
     $.ajax({
         type: $form.attr('method'),
         url: $form.attr('action'),
         data: $form.serialize(),
-        cache       : false,
         dataType    : 'json',
         contentType: "application/json; charset=utf-8",
         error       : function(err) { alert("Could not connect to the registration server. Please try again later."); },
@@ -34,7 +24,7 @@ $(document).ready(function() {
     });
   }
 
-  var $form = $('.trial-pack-signup');
+  var $form = $('.validate');
 
   $('form input[type="submit"]').bind('click', function ( event ) {
       if ( event ) event.preventDefault();
