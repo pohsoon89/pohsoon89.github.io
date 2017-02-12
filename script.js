@@ -12,16 +12,7 @@ $(document).ready(function() {
 
       $.ajax({
         type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
-        url         : 'https://github.us14.list-manage.com/subscribe/post?u=3e394ca01b95d97f157c72e12&amp;id=7a595cd258', // the url where we want to POST
-        crossDomain : true,
-        xhrFields   : {
-          // The 'xhrFields' property sets additional fields on the XMLHttpRequest.
-          // This can be used to set the 'withCredentials' property.
-          // Set the value to 'true' if you'd like to pass cookies to the server.
-          // If this is enabled, your server must respond with the header
-          // 'Access-Control-Allow-Credentials: true'.
-          withCredentials: false
-        },
+        url         : 'https://github.us14.list-manage.com/subscribe/post?u=3e394ca01b95d97f157c72e12&amp;id=7a595cd258&c=?', // the url where we want to POST
         data        : formData, // our data object
         dataType    : 'jsonp', // what type of data do we expect back from the server
         encode          : true,
