@@ -34,7 +34,7 @@ $(document).ready(function() {
     });
   }
 
-  var $form = $('.validate');
+  var $form = $('.trial-pack-signup');
 
   $('form input[type="submit"]').bind('click', function ( event ) {
       if ( event ) event.preventDefault();
