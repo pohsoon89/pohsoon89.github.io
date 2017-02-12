@@ -3,9 +3,9 @@ $(document).ready(function() {
   $(".trial-pack-validate .subscribe-button").click(function() {
     $('.trial-pack-validate').submit(function(event) {
       var formData = {
-      'mce-NAME' : $('trial-pack-validate #mce-NAME').val(),
-      'mce-EMAIL' : $('trial-pack-validate #mce-EMAIL').val(),
-      'mce-MMERGE3' : $('trial-pack-validate #mce-MMERGE3').val()
+      'mce-NAME' : $('.trial-pack-validate #mce-NAME').val(),
+      'mce-EMAIL' : $('.trial-pack-validate #mce-EMAIL').val(),
+      'mce-MMERGE3' : $('.trial-pack-validate #mce-MMERGE3').val()
       };
 
       console.log(formData);
@@ -13,9 +13,8 @@ $(document).ready(function() {
       $.ajax({
         type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
         url         : 'https://github.us14.list-manage.com/subscribe/post?u=3e394ca01b95d97f157c72e12&amp;id=7a595cd258', // the url where we want to POST
-        data        : formData, // our data object
-        dataType    : 'json', // what type of data do we expect back from the server
-        xhrFields: {
+        crossDomain : true,
+        xhrFields   : {
           // The 'xhrFields' property sets additional fields on the XMLHttpRequest.
           // This can be used to set the 'withCredentials' property.
           // Set the value to 'true' if you'd like to pass cookies to the server.
@@ -23,6 +22,8 @@ $(document).ready(function() {
           // 'Access-Control-Allow-Credentials: true'.
           withCredentials: false
         },
+        data        : formData, // our data object
+        dataType    : 'json', // what type of data do we expect back from the server
         encode          : true,
         error       : function(err) {
           alert("Could not connect to the registration server. Please try again later.");
