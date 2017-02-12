@@ -42,7 +42,7 @@ $(document).ready(function() {
 
       $.ajax({
         type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
-        url         : 'https://github.us14.list-manage.com/subscribe/post?u=3e394ca01b95d97f157c72e12&amp;id=7a595cd258', // the url where we want to POST
+        url         : '//github.us14.list-manage.com/subscribe/post?u=3e394ca01b95d97f157c72e12&amp;id=7a595cd258', // the url where we want to POST
         data        : formData, // our data object
         dataType    : 'json', // what type of data do we expect back from the server
         encode          : true
