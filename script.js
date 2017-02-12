@@ -23,7 +23,7 @@ $(document).ready(function() {
           withCredentials: false
         },
         data        : formData, // our data object
-        dataType    : 'json', // what type of data do we expect back from the server
+        dataType    : 'jsonp', // what type of data do we expect back from the server
         encode          : true,
         error       : function(err) {
           alert("Could not connect to the registration server. Please try again later.");
