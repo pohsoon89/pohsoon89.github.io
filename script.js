@@ -1,37 +1,5 @@
 $(document).ready(function() {
 
-  // var data =  $.getJSON('https://us14.api.mailchimp.com/3.0/lists/7a595cd258', {
-  //   headers: {'Authorization': 'apikey 29038bc005974c5b9e439ee5023466a0-us14'},
-  // });
-
-  // function register($form) {
-  //   $.ajax({
-  //       type: $form.attr('method'),
-  //       url: $form.attr('action'),
-  //       data: $form.serialize(),
-  //       dataType    : 'json',
-  //       contentType: "application/json; charset=utf-8",
-  //       error       : function(err) { alert("Could not connect to the registration server. Please try again later."); },
-  //       success     : function(data) {
-  //           if (data.result != "success") {
-  //               // Something went wrong, do something to notify the user. maybe
-  //               alert(data.msg);
-  //           } else {
-  //               // It worked, carry on...
-  //               alert("success");
-  //           }
-  //       }
-  //   });
-  // }
-
-  // var $form = $('.validate');
-
-  // $('form input[type="submit"]').bind('click', function ( event ) {
-  //     if ( event ) event.preventDefault();
-  //     register($form);
-  // });
-
-
   $(".trial-pack-validate .subscribe-button").click(function() {
     $('.trial-pack-validate').submit(function(event) {
       var formData = {
