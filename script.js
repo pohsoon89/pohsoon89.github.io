@@ -15,6 +15,14 @@ $(document).ready(function() {
         url         : 'https://github.us14.list-manage.com/subscribe/post?u=3e394ca01b95d97f157c72e12&amp;id=7a595cd258', // the url where we want to POST
         data        : formData, // our data object
         dataType    : 'json', // what type of data do we expect back from the server
+        xhrFields: {
+          // The 'xhrFields' property sets additional fields on the XMLHttpRequest.
+          // This can be used to set the 'withCredentials' property.
+          // Set the value to 'true' if you'd like to pass cookies to the server.
+          // If this is enabled, your server must respond with the header
+          // 'Access-Control-Allow-Credentials: true'.
+          withCredentials: false
+        },
         encode          : true,
         error       : function(err) {
           alert("Could not connect to the registration server. Please try again later.");
