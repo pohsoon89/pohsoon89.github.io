@@ -60,7 +60,7 @@ body, html {
 	text-align: center;
 }
 
-.close-btn{
+.close-btn, .return-btn{
 	padding: 20px;
 	border: 1px solid  #cb9b57;
 	color: #cb9b57;
@@ -68,7 +68,7 @@ body, html {
 	border-radius: 5px;
 }
 
-.close-btn:hover{
+.close-btn:hover, .return-btn:hover{
 	background-color: #cb9b57;
 	color: white;
 	cursor: pointer;
