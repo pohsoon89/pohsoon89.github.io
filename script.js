@@ -91,41 +91,6 @@ $(document).ready(function() {
       });
   }
 
-  ajaxMailChimpForm($("#standard-subscribe-form"), $("#thank-you-title"));
-
-  // $(".trial-pack-validate .subscribe-button").click(function() {
-  //   $('.trial-pack-validate').submit(function(event) {
-  //     var formData = {
-  //     'mce-NAME' : $('.trial-pack-validate #mce-NAME').val(),
-  //     'mce-EMAIL' : $('.trial-pack-validate #mce-EMAIL').val(),
-  //     'mce-MMERGE3' : $('.trial-pack-validate #mce-MMERGE3').val()
-  //     };
-
-  //     console.log(formData);
-
-  //     $.ajax({
-  //       type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
-  //       url         : 'https://github.us14.list-manage.com/subscribe/post?u=3e394ca01b95d97f157c72e12&amp;id=7a595cd258&c=?', // the url where we want to POST
-  //       data        : formData, // our data object
-  //       dataType    : 'jsonp', // what type of data do we expect back from the server
-  //       encode          : true,
-  //       error       : function(err) {
-  //         alert("Could not connect to the registration server. Please try again later.");
-  //       },
-  //       success     : function(data) {
-  //           if (data.result != "success") {
-  //               // Something went wrong, do something to notify the user. maybe
-  //               alert(data.msg);
-  //           } else {
-  //               // It worked, carry on...
-  //               alert("success");
-  //           }
-  //       }
-  //     });
-  //     event.preventDefault();
-  //   });
-  // });
-
   $(".work-btn").click(function() {
     $('html, body').animate({
         scrollTop: $("#work").offset().top - 120
@@ -170,16 +135,19 @@ $(document).ready(function() {
 
   $("#trial-btn").click(function() {
     // $(".popup-background").css("display", "block");
+    $("body").css("overflow", "hidden");
     $(".trial-popup").show();
   });
 
   $("#standard-btn").click(function() {
     // $(".popup-background").css("display", "block");
+    $("body").css("overflow", "hidden");
     $(".standard-pack").show();
   });
 
   $(".cancel").click(function() {
     $(".popup-background").css("display", "block");
+    $("body").css("overflow", "scroll");
     $(".popup-background").hide();
   });
 

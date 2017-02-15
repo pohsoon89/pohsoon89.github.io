@@ -19,6 +19,7 @@ body, html {
 	background-color: rgba(0,0,0,0.7);
 	display: none;
 
+
 }
 
 .flip-container {
@@ -79,8 +80,23 @@ body, html {
 	width: 80%;
 	max-width: 500px;
 	margin: 50px auto;
-
 }
+
+@media screen and (max-width: 767px){
+
+	#important-background{
+		margin: 0px !important;
+	}
+
+	.flip-container, .signup-popup, .thank-you{
+		width: 90%;
+		max-width: 500px;
+		margin: 5px auto;
+		margin-left: 2%;
+	}
+}
+
+
 
  .signup-popup, .thank-you {
 	width: 90%;
