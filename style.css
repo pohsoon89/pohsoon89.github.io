@@ -256,48 +256,44 @@ body, html {
 	background-color: #010916;
 	color: #cb9b57;
 	box-sizing: border-box;
-	padding: 120px 0px;
-	padding-bottom: 20px;
+	padding: 0px ;
 }
 
 .jumbo-frame{
-	border: 5px solid #cb9b57;
-	width: 90%;
+	width: 100%;
+	max-width: 1000px;
 	margin: 0px auto;
+	text-align: center;
 }
 
 .jumbo-img{
-	float: left;
-	width: 30%;
+	max-width: 400px;
+	width: 90%;
 	text-align: center;
-	margin-top: -110px;
-	margin-left: 10%
+	display: inline-block;
+	/*border: 1px solid white;*/
 
 }
 
 .text-box{
 	box-sizing: border-box;
 	max-width: 400px;
+	width: 90%;
 	padding: 15px;
+	padding-bottom: 50px;
 	text-align: center;
 	background-color: #010916;
-	float: left;
-	margin-top: -70px;
-	margin-left: 12%;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 100px;
+	/*border: 1px solid white;*/
 }
 
 .text-box p {
-	font-size: 36px;
+	font-size: 24px;
 	color: #cb9b57;
-	/*border: 1px solid white;*/
 }
 
-.jumbo-main-image{
-	width: 100%;
-	/*border: 1px solid white;*/
-	background-color: #010916;
-	margin-left: 5px;
-}
 
 .btn-gold{
 	height: 50px;
@@ -311,13 +307,76 @@ body, html {
 	text-align: center;
 	border-radius: 25px;
 	transition: all 0.5s;
+}
 
+.btn-gold2{
+	/*height: 50px;*/
+	border: 2px solid #cb9b57;
+	margin-top: 20px;
+	text-align: left;
+	transition: all 0.5s;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+.btn-gold2 p{
+	font-size: 16px;
+	color: white;
+	font-weight: lighter;
+	color: #cb9b57;
+}
+
+.btn-gold2 p.btn-title{
+	font-size: 22px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.btn-gold2 span.btn-kcal{
+	border: 1px solid #cb9b57;
+	font-size: 12px;
+	line-height: 22px;
+	padding: 3px;
+	margin: 0px;vertical-align: top;
+}
+
+.btn-gold2  p.btn-desc {
+	font-size: 12px;
+	margin-top: 5px;
+	color: #ECE1D2;
+}
+
+.btn-gold2  span.btn-price {
+	font-size: 18px;
+	color: white;
 }
 
 .btn-gold:hover{
 	background-color: #cb9b57;
 	color: white;
 	cursor: pointer;
+}
+
+.btn-gold2:hover{
+	background-color: #cb9b57;
+	color: white;
+	cursor: pointer;
+}
+
+.btn-gold2:hover p.btn-title{
+	color: white;
+}
+
+.btn-gold2:hover span.btn-kcal{
+	border: 1px solid white;
+}
+
+.btn-gold2:hover  p.btn-desc {
+	color: #5E3908;
+}
+
+.btn-gold2:hover  span.btn-price {
+	color: #5E3908;
 }
 
 .btn-gold:first-child{
@@ -774,28 +833,15 @@ p.nutrition-value{
 * html .clearfix { height: 1%; }
 .clearfix { display: block; }
 /* close commented backslash hack */
-
+@media screen and (max-width: 819px){
+	.text-box{
+		margin-top: -5px;
+		width: 100%;
+	}
+}
 
 @media screen and (max-width: 1010px){
-	.jumbo-img{
-		float: left;
-		width: 30%;
-		text-align: center;
-		margin-top: -110px;
-		margin-left: 5%;
 
-	}
-
-	.text-box{
-		box-sizing: border-box;
-		max-width: 400px;
-		padding: 15px;
-		text-align: center;
-		background-color: #010916;
-		float: left;
-		margin-top: -100px;
-		margin-left: 5%;
-	}
 
 	.navbar ul li {
 		width: 90px;
@@ -844,26 +890,6 @@ p.nutrition-value{
 		padding: 5px 0px;
 	}
 
-	.jumbo-img{
-		display: none;
-	}
-
-	.text-box{
-		box-sizing: border-box;
-		max-width: none;
-		width: 90%;
-		padding: 15px;
-		text-align: center;
-		background-color: #010916;
-		margin-top: -50px;
-		margin-left: 5%;
-	}
-
-	.text-box p {
-		font-size: 36px;
-		color: #cb9b57;
-		/*border: 1px solid white;*/
-	}
 
 	.about-box{
 		text-align: center;
@@ -1010,28 +1036,6 @@ p.nutrition-value{
 		width: 100%;
 	}
 
-	.jumbotron{
-		padding: 10px 0px;
-	}
-
-	.jumbo-img{
-		display: block;
-		width: 70%;
-		border: 1px solid black;
-		margin-top: -10px;
-		margin-left: 15%;
-	}
-	.text-box{
-		margin-top: -15px;
-	}
-
-	.text-box p{
-		font-size: 24px;
-	}
-
-	.jumbo-frame{
-		border: 0;
-	}
 
 	.standard-pack, .advance-pack{
 		margin: 10px auto;
