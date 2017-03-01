@@ -91,6 +91,10 @@ $(document).ready(function() {
       });
   }
 
+  var w = window.innerWidth;
+  console.log(window.innerWidth);
+
+
   $(".work-btn").click(function() {
     $('html, body').animate({
         scrollTop: $("#work").offset().top - 120
@@ -122,14 +126,25 @@ $(document).ready(function() {
   });
 
   $("#trial-pack").click(function() {
+    console.log(window.innerWidth);
+    if(window.innerWidth < 658){
+      var scroll = 30;
+    }else{
+      var scroll = 300;
+    }
     $('html, body').animate({
-        scrollTop: ($(".trial").offset().top ) - 300
+      scrollTop: ($(".trial").offset().top ) - scroll
     }, 1000);
   });
 
   $("#standard-pack").click(function() {
+    if(window.innerWidth < 658){
+      var scroll = 30;
+    }else{
+      var scroll = 300;
+    }
     $('html, body').animate({
-        scrollTop: ($(".sell_pack").offset().top ) - 300
+        scrollTop: ($(".sell_pack").offset().top ) - scroll
     }, 1000);
   });
 
