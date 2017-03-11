@@ -433,7 +433,16 @@ p.section-description {
 	font-weight: 200;
 }
 
+.contact p.section-title{
+	font-size: 36px;
+	font-weight: bold;
+}
 
+.contact p.section-description {
+	font-size: 16px;
+	margin-top: 10px;
+	font-weight: 200;
+}
 
 .ingredient-box{
 	width: 100%;
@@ -804,12 +813,79 @@ p.nutrition-value{
 	background-color: #b8863f;
 }
 
+.contact{
+	width: 100%;
+	padding: 20px;
+	background-color: #010916;
+	text-align: center;
+	color: #cb9b57;
+	font-size: 24px;
+	box-sizing: border-box;
+}
+
+.contact .contact-info{
+	width: 80%;
+	margin: 50px auto;
+}
+
+.contact-detail p i.fa{
+	font-size: 24px;
+}
+
+.contact-detail{
+	width: 30%;
+	min-height: 100px;
+	float: left;
+	margin-right: 5%;
+	background-color: white;
+	padding: 10px 10px;
+	padding-bottom: 15px;
+	border-radius: 3px;
+	box-sizing: border-box;
+	word-wrap: break-word; 
+	transition: all 0.5s;
+}
+.contact-detail:hover{
+	cursor: pointer;
+	transform: translateY(-5px);
+}
+
+.contact-detail-last{
+	margin-right: 0%;
+}
+
+.contact-us-btn{
+	padding: 10px 12px;
+	border-radius: 30px;
+	background-color:#cb9b57;
+	border: 1px solid #cb9b57;
+	position: fixed;
+	bottom: 25px;
+	right: 20px;
+	z-index: 99999;
+	color: white;
+	transition: all 0.5s;
+	transform: translateX(200%);
+}
+
+.contact-us-btn:hover{
+	background-color:#ffffff;
+	border: 1px solid #cb9b57;
+	color: #cb9b57;
+	cursor: pointer;
+}
+
+.contact-us-btn p{
+	font-size: 20px;
+}
+
 .footer{
 	width: 100%;
-	height: 500px;
+	min-height: 500px;
 	background-color: #010916;
 	margin-top: -300px;
 	padding-top: 340px;
+	padding-bottom: 50px;
 	text-align: center;
 	box-sizing: border-box;
 	color: #cb9b57;
@@ -1022,6 +1098,11 @@ p.nutrition-value{
 		float: left;
 	}
 
+	.contact .contact-info{
+		width: 90%;
+		margin: 50px auto;
+	}
+
 }
 
 @media screen and (max-width: 658px){
@@ -1154,6 +1235,21 @@ p.nutrition-value{
 
 	.product-detail{
 		text-align: center;
+	}
+
+	.contact .contact-info{
+		width: 80%;
+	}
+
+	.contact-detail{
+		width: 100%;
+		margin-right: 0%;
+		float: center;
+		margin-top: 10px;
+	}
+
+	.contact-detail:first-child{
+		margin-left: 0%;
 	}
 
 }

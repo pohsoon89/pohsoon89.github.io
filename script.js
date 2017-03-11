@@ -125,6 +125,12 @@ $(document).ready(function() {
     }, 1000);
   });
 
+  $(".contact-us-btn").click(function() {
+    $('html, body').animate({
+        scrollTop: ($(".contact").offset().top )- 100
+    }, 1000);
+  });
+
   $("#trial-pack").click(function() {
     console.log(window.innerWidth);
     if(window.innerWidth < 658){
@@ -189,13 +195,14 @@ $(document).ready(function() {
         if ($(window).scrollTop() > 76) {
           $('.desktop-navbar').addClass('navbar-fixed');
           $('.jumbotron').css("margin-top", "70px");
+          $('.contact-us-btn').css("transform", "translateX(0%)");
 
         }
-
 
         if ($(window).scrollTop() < 75) {
           $('.desktop-navbar').removeClass('navbar-fixed');
           $('.jumbotron').css("margin-top", "0px");
+          $('.contact-us-btn').css("transform", "translateX(200%)");
 
         }
       }
