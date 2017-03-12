@@ -433,17 +433,6 @@ p.section-description {
 	font-weight: 200;
 }
 
-.contact p.section-title{
-	font-size: 36px;
-	font-weight: bold;
-}
-
-.contact p.section-description {
-	font-size: 16px;
-	margin-top: 10px;
-	font-weight: 200;
-}
-
 .ingredient-box{
 	width: 100%;
 	max-width: 1000px;
@@ -818,18 +807,32 @@ p.nutrition-value{
 	padding: 20px;
 	background-color: #010916;
 	text-align: center;
-	color: #cb9b57;
+	color: #ffffff;
 	font-size: 24px;
 	box-sizing: border-box;
 }
 
+
+.contact p.section-title{
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.contact p.section-description {
+	font-size: 16px;
+	margin-top: 10px;
+	font-weight: 200;
+}
+
 .contact .contact-info{
 	width: 80%;
+	max-width: 1100px;
 	margin: 50px auto;
 }
 
 .contact-detail p i.fa{
 	font-size: 24px;
+	color: #cb9b57;
 }
 
 .contact-detail{
@@ -837,13 +840,14 @@ p.nutrition-value{
 	min-height: 100px;
 	float: left;
 	margin-right: 5%;
-	background-color: white;
 	padding: 10px 10px;
 	padding-bottom: 15px;
-	border-radius: 3px;
+	/*border-radius: 3px;*/
 	box-sizing: border-box;
 	word-wrap: break-word; 
 	transition: all 0.5s;
+	border-bottom: 1px solid #cb9b57;
+	color: #ffffff;
 }
 .contact-detail:hover{
 	cursor: pointer;
@@ -866,6 +870,7 @@ p.nutrition-value{
 	color: white;
 	transition: all 0.5s;
 	transform: translateX(200%);
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .contact-us-btn:hover{
@@ -1246,6 +1251,7 @@ p.nutrition-value{
 		margin-right: 0%;
 		float: center;
 		margin-top: 10px;
+		border-bottom: none;
 	}
 
 	.contact-detail:first-child{

@@ -192,20 +192,19 @@ $(document).ready(function() {
       //console.log($(window).width());
       var windowsize = $(window).width();
       if (windowsize > 658) {
-        if ($(window).scrollTop() > 76) {
-          $('.desktop-navbar').addClass('navbar-fixed');
-          $('.jumbotron').css("margin-top", "70px");
-          $('.contact-us-btn').css("transform", "translateX(0%)");
-
-        }
-
-        if ($(window).scrollTop() < 75) {
-          $('.desktop-navbar').removeClass('navbar-fixed');
-          $('.jumbotron').css("margin-top", "0px");
-          $('.contact-us-btn').css("transform", "translateX(200%)");
-
-        }
+        
       }
+    if ($(window).scrollTop() > 76) {
+        $('.desktop-navbar').addClass('navbar-fixed');
+        $('.jumbotron').css("margin-top", "70px");
+        $('.contact-us-btn').css("transform", "translateX(0%)");
+    }
+
+    if ($(window).scrollTop() < 75) {
+        $('.desktop-navbar').removeClass('navbar-fixed');
+        $('.jumbotron').css("margin-top", "0px");
+        $('.contact-us-btn').css("transform", "translateX(200%)");
+    }
   });
 
 
