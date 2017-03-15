@@ -4,6 +4,10 @@
   src: url("font/Brandon_bld.otf") format("opentype");
 }
 
+.box{
+	border: 1px solid white;
+}
+
 body, html {
 	font-family: 'Montserrat', sans-serif;
 	height: 100%;
@@ -812,6 +816,10 @@ p.nutrition-value{
 	box-sizing: border-box;
 }
 
+.contact .contact-info a{
+	text-decoration: none;
+}
+
 
 .contact p.section-title{
 	font-size: 36px;
@@ -838,8 +846,7 @@ p.nutrition-value{
 .contact-detail{
 	width: 30%;
 	min-height: 100px;
-	float: left;
-	margin-right: 5%;
+	margin: 0px auto;
 	padding: 10px 10px;
 	padding-bottom: 15px;
 	/*border-radius: 3px;*/
@@ -852,10 +859,6 @@ p.nutrition-value{
 .contact-detail:hover{
 	cursor: pointer;
 	transform: translateY(-5px);
-}
-
-.contact-detail-last{
-	margin-right: 0%;
 }
 
 .contact-us-btn{
@@ -1251,7 +1254,6 @@ p.nutrition-value{
 		margin-right: 0%;
 		float: center;
 		margin-top: 10px;
-		border-bottom: none;
 	}
 
 	.contact-detail:first-child{
