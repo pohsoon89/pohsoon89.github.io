@@ -845,6 +845,7 @@ p.nutrition-value{
 
 .contact-detail{
 	width: 30%;
+	min-width: 300px;
 	min-height: 100px;
 	margin: 0px auto;
 	padding: 10px 10px;
