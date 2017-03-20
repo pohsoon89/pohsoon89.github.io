@@ -125,7 +125,7 @@ $(document).ready(function() {
     }, 1000);
   });
 
-  $(".contact-us-btn").click(function() {
+  $(".contact-us-btn, p.contact-btn").click(function() {
     $('html, body').animate({
         scrollTop: ($(".contact").offset().top )- 100
     }, 1000);
@@ -177,6 +177,7 @@ $(document).ready(function() {
   $(".close-btn").click(function() {
     $('.flipper').css("transform", "rotateY(0deg)");
     $(".popup-background").css("display", "block");
+    $("body").css("overflow", "scroll");
     $(".popup-background").hide();
   });
 

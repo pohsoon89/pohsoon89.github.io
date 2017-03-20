@@ -192,6 +192,23 @@ body, html {
 	margin-left: 40px;
 	letter-spacing: 1.5px;
 	text-transform: uppercase;
+	display: inline-block;
+}
+
+.topbar p.contact-btn{
+	border: 1px solid #cb9b57;
+	border-radius: 4px;
+	float: right;
+	margin-top: 9px;
+	margin-right: 20px;
+	line-height: normal;
+	padding: 8px 15px;
+}
+
+.topbar p.contact-btn:hover{
+	cursor: pointer;
+	background-color: #cb9b57;
+	color: white;
 }
 
 .navbar{
